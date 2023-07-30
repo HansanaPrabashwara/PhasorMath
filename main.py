@@ -1,12 +1,12 @@
-from Phasor.phasorPD import PhasorPD
-from Phasor.phasorPR import PhasorPR
-from Phasor.phasorConvertions import *
-from SymmetricalComponents.unbalancedToSC import unbalancedToSC
-from SymmetricalComponents.SCToUnbalanced import SCToUnbalanced
-from Plot.plotPhasor import Plot
+
+from Phasor.phasor import *
+from Phasor.plot import Plot
+from Phasor.phasor import *
+from Phasor.sc import *
+
 a = PhasorPD(100, 45)
 
-print(a*3)
+print(a * 3)
 
 b = PhasorPR(200, 3.14)
 print(b)
@@ -18,3 +18,6 @@ d = SCToUnbalanced(a,b,a-b)
 Plot(a)
 Plot(c)
 Plot(d)
+
+
+
