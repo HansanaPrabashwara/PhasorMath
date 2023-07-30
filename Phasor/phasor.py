@@ -18,7 +18,6 @@ class Phasor(ABC):
         self.radian = 0
         self.degree = 0
         self.roundOff = 2
-        print("A")
         
 
 class PhasorPD(Phasor):

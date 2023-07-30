@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phasor package &mdash; Phasoe n documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Phasor" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Phasoe
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Phasor</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Phasor package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Phasor.conversions">Phasor.conversions module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.PolarDegreeToPolarRadians"><code class="docutils literal notranslate"><span class="pre">PolarDegreeToPolarRadians()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.PolarDegreeToRectangle"><code class="docutils literal notranslate"><span class="pre">PolarDegreeToRectangle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.PolarRadiansToPolarDegree"><code class="docutils literal notranslate"><span class="pre">PolarRadiansToPolarDegree()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.PolarRadiansToRectangular"><code class="docutils literal notranslate"><span class="pre">PolarRadiansToRectangular()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.RectangularToPolarDegree"><code class="docutils literal notranslate"><span class="pre">RectangularToPolarDegree()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.RectangularToPolarRadians"><code class="docutils literal notranslate"><span class="pre">RectangularToPolarRadians()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.conversions.RoundOff"><code class="docutils literal notranslate"><span class="pre">RoundOff()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Phasor.phasor">Phasor.phasor module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.Phasor"><code class="docutils literal notranslate"><span class="pre">Phasor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.PhasorPD"><code class="docutils literal notranslate"><span class="pre">PhasorPD</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.PhasorPR"><code class="docutils literal notranslate"><span class="pre">PhasorPR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.PhasorRe"><code class="docutils literal notranslate"><span class="pre">PhasorRe</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.toDeg"><code class="docutils literal notranslate"><span class="pre">toDeg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.toRad"><code class="docutils literal notranslate"><span class="pre">toRad()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.phasor.toRec"><code class="docutils literal notranslate"><span class="pre">toRec()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Phasor.plot">Phasor.plot module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.plot.Plot"><code class="docutils literal notranslate"><span class="pre">Plot</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Phasor.sc">Phasor.sc module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.sc.SCToUnbalanced"><code class="docutils literal notranslate"><span class="pre">SCToUnbalanced</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Phasor.sc.unbalancedToSC"><code class="docutils literal notranslate"><span class="pre">unbalancedToSC</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Phasor">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Phasoe</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Phasor</a></li>
+      <li class="breadcrumb-item active">Phasor package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Phasor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="phasor-package">
+<h1>Phasor package<a class="headerlink" href="#phasor-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-Phasor.conversions">
+<span id="phasor-conversions-module"></span><h2>Phasor.conversions module<a class="headerlink" href="#module-Phasor.conversions" title="Permalink to this heading"></a></h2>
+<p>This module provides functionalities to convert complex nnumbers to differnt complex notaions</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.PolarDegreeToPolarRadians">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">PolarDegreeToPolarRadians</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.PolarDegreeToPolarRadians" title="Permalink to this definition"></a></dt>
+<dd><p>Convert degree angle to radians</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle</strong> (<em>float</em>) – Angle in degree</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.PolarDegreeToRectangle">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">PolarDegreeToRectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.PolarDegreeToRectangle" title="Permalink to this definition"></a></dt>
+<dd><p>Convert polar coordinates to rectangular coordinates when angle is in degrees</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>modulus</strong> (<em>float</em>) – Modulus of the complex notation</p></li>
+<li><p><strong>angle</strong> (<em>float</em>) – Angle in degrees</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Rectangular coordinates</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>complex</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.PolarRadiansToPolarDegree">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">PolarRadiansToPolarDegree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.PolarRadiansToPolarDegree" title="Permalink to this definition"></a></dt>
+<dd><p>Convert radian angle to degrees.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle</strong> (<em>float</em>) – Angle size in radians</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Angle in degrees</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.PolarRadiansToRectangular">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">PolarRadiansToRectangular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.PolarRadiansToRectangular" title="Permalink to this definition"></a></dt>
+<dd><p>Convert polar coordinates to rectangular coordinates when angle is in radians.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>modulus</strong> (<em>float</em>) – Modulus of the complex notation.</p></li>
+<li><p><strong>angle</strong> (<em>float</em>) – Angle in radians.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Rectangular coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>complex</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.RectangularToPolarDegree">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">RectangularToPolarDegree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.RectangularToPolarDegree" title="Permalink to this definition"></a></dt>
+<dd><p>Return the corresponding modulus and degree angle for given complex number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>complex</strong> (<em>complex</em>) – Complex form of the phasor</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Modulus value and angle value in degrees</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float,float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.RectangularToPolarRadians">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">RectangularToPolarRadians</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.RectangularToPolarRadians" title="Permalink to this definition"></a></dt>
+<dd><p>Return the corresponding modulus and radian angle for given complex number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>complex</strong> (<em>complex</em>) – Complex form of the phasor</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Modulus value and angle value in radians</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>modulus,angle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.conversions.RoundOff">
+<span class="sig-prename descclassname"><span class="pre">Phasor.conversions.</span></span><span class="sig-name descname"><span class="pre">RoundOff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOffPoints</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.conversions.RoundOff" title="Permalink to this definition"></a></dt>
+<dd><p>Roundoff the given value to its given decimal points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>float</em>) – Value to be rounded off.</p></li>
+<li><p><strong>roundOffPoints</strong> (<em>int</em>) – Decimal points to be rounded off.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Rounded off value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Phasor.phasor">
+<span id="phasor-phasor-module"></span><h2>Phasor.phasor module<a class="headerlink" href="#module-Phasor.phasor" title="Permalink to this heading"></a></h2>
+<p>Create Phsor objects with different formats and provide capability to do basic phsor calculations</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.phasor.Phasor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">Phasor</span></span><a class="headerlink" href="#Phasor.phasor.Phasor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>An abstract class for Phasor objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ABC</strong> (<em>ABC</em>) – abc.ABC superclass</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.phasor.PhasorPD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">PhasorPD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.PhasorPD" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Phasor</span></code></a></p>
+<p>Initialize Phasor objects in Polor Coordinates with degree as the angle unit</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Phasor</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Abstract Phasor parent class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.phasor.PhasorPR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">PhasorPR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radian</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.PhasorPR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Phasor</span></code></a></p>
+<p>Initialize Phasor objects in Polor Coordinates with radians as the angle unit</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Phasor</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Abstract Phasor parent class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.phasor.PhasorRe">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">PhasorRe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">complex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.PhasorRe" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Phasor</span></code></a></p>
+<p>Initialize Phasor objects in Rectangulatr Coordinates with complex numbers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Phasor</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Abstract Phasor parent class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.phasor.toDeg">
+<span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">toDeg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phasorObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.toDeg" title="Permalink to this definition"></a></dt>
+<dd><p>Convert any type of phasor object to PhasorPD object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>phasorObject</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Phasor object to be converted.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>TypeError</strong> – If the argument is not a phasor object.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Phasor object with polar coordiantes with angles in degrees.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#Phasor.phasor.PhasorPD" title="Phasor.phasor.PhasorPD">PhasorPD</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.phasor.toRad">
+<span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">toRad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phasorObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.toRad" title="Permalink to this definition"></a></dt>
+<dd><p>Convert any type of phasor object to PhasorPR object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>phasorObject</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Phasor object to be converted.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>TypeError</strong> – If the argument is not a phasor object.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Phasor object with polar coordiantes with angles in radians.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#Phasor.phasor.PhasorPR" title="Phasor.phasor.PhasorPR">PhasorPR</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Phasor.phasor.toRec">
+<span class="sig-prename descclassname"><span class="pre">Phasor.phasor.</span></span><span class="sig-name descname"><span class="pre">toRec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phasorObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.phasor.toRec" title="Permalink to this definition"></a></dt>
+<dd><p>Convert any type of phaasor object to PhasorRe object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>phasorObject</strong> (<a class="reference internal" href="#Phasor.phasor.Phasor" title="Phasor.phasor.Phasor"><em>Phasor</em></a>) – Phasor object to be converted.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>TypeError</strong> – If the argument is not a phasor object.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Phasor object with rectangular coordinates.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#Phasor.phasor.PhasorRe" title="Phasor.phasor.PhasorRe">PhasorRe</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Phasor.plot">
+<span id="phasor-plot-module"></span><h2>Phasor.plot module<a class="headerlink" href="#module-Phasor.plot" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.plot.Plot">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.plot.</span></span><span class="sig-name descname"><span class="pre">Plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">phasor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.plot.Plot" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generate polar plots to visualize Phasor objects, SCToUnbalanced objects, unbalancedToSC objects</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.plot.Plot.color">
+<span class="sig-name descname"><span class="pre">color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phasor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.plot.Plot.color" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.plot.Plot.createTrace">
+<span class="sig-name descname"><span class="pre">createTrace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phasor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.plot.Plot.createTrace" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.plot.Plot.setTheme">
+<span class="sig-name descname"><span class="pre">setTheme</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.plot.Plot.setTheme" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Phasor.sc">
+<span id="phasor-sc-module"></span><h2>Phasor.sc module<a class="headerlink" href="#module-Phasor.sc" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.sc.SCToUnbalanced">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.sc.</span></span><span class="sig-name descname"><span class="pre">SCToUnbalanced</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">A1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">A2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.SCToUnbalanced" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Generate the corresponding unbalanced three-phase system using symmetrical components.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.SCToUnbalanced.toDegList">
+<span class="sig-name descname"><span class="pre">toDegList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.SCToUnbalanced.toDegList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to polar coordinates where angle is in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.SCToUnbalanced.toRadList">
+<span class="sig-name descname"><span class="pre">toRadList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.SCToUnbalanced.toRadList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to polar coordinates where angle is in radians.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.SCToUnbalanced.toRecList">
+<span class="sig-name descname"><span class="pre">toRecList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.SCToUnbalanced.toRecList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to rectangular coordinates.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Phasor.sc.</span></span><span class="sig-name descname"><span class="pre">unbalancedToSC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roundOff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Convert unbalanced three phase system int symmetrical components.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.negative">
+<span class="sig-name descname"><span class="pre">negative</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.negative" title="Permalink to this definition"></a></dt>
+<dd><p>Print negative components</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Negative components</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.positive">
+<span class="sig-name descname"><span class="pre">positive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.positive" title="Permalink to this definition"></a></dt>
+<dd><p>Print positive components</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Positive components</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.toDegList">
+<span class="sig-name descname"><span class="pre">toDegList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.toDegList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to polar coordinates where angle is in degrees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.toRadList">
+<span class="sig-name descname"><span class="pre">toRadList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.toRadList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to polar coordinates where angle is in radians.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.toRecList">
+<span class="sig-name descname"><span class="pre">toRecList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.toRecList" title="Permalink to this definition"></a></dt>
+<dd><p>Convert all Phasor objects to rectangular coordinates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Phasor.sc.unbalancedToSC.zero">
+<span class="sig-name descname"><span class="pre">zero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Phasor.sc.unbalancedToSC.zero" title="Permalink to this definition"></a></dt>
+<dd><p>Print zero components</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Zero components</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Phasor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Phasor" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="Phasor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, n.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
