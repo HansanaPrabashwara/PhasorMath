@@ -1,9 +1,9 @@
-"""This module provides functionalities to convert complex nnumbers to differnt complex notaions
+"""Provides functionalities to convert complex numbers to differnt complex notaions.
 """
 
 from abc import abstractmethod
 import numpy as np
-from math import sqrt, pi
+
 
 
 @abstractmethod

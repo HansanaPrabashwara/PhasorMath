@@ -1,7 +1,9 @@
-from Phasor.phasor import *
+"""Convert symmetrical components to unbalanced three phase and convert unbalanced three phase to symmetrical components."""
+
+from .phasor import *
 import numpy as np
 
-class SCToUnbalanced:
+class SCtoU:
     """Generate the corresponding unbalanced three-phase system using symmetrical components.
     """
     def __init__(self,A0,A1,A2, roundOff=2):
@@ -98,7 +100,7 @@ class SCToUnbalanced:
 
 
 
-class unbalancedToSC:
+class UtoSC:
     """Convert unbalanced three phase system int symmetrical components.
     """
     def __init__(self,A,B,C, roundOff=2):

@@ -1,8 +1,7 @@
 
-from Phasor.phasor import *
-from Phasor.plot import Plot
-from Phasor.phasor import *
-from Phasor.sc import *
+from src.Phasor.phasor import *
+from src.Phasor.plot import Plot
+from src.Phasor.sc import *
 
 a = PhasorPD(100, 45)
 
