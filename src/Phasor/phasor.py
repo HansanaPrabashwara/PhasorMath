@@ -1,9 +1,9 @@
-"""Create Phsor objects with different formats and provide capability to do basic phsor calculations
+"""Create Phasor objects with different formats and provide capability to do basic phsor calculations.
 """
 
 import numpy as np
 from abc import ABC, abstractmethod
-from Phasor.conversions import *
+from .conversions import *
 
 class Phasor(ABC):
     """An abstract class for Phasor objects

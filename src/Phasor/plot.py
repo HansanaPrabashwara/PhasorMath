@@ -1,8 +1,10 @@
-from Phasor.sc import *
+"""Plots the phasor objects and symmetrical phasor components."""
+
+from .sc import *
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-from Phasor.phasor import *
+from .phasor import *
 from abc import abstractmethod
 
 
