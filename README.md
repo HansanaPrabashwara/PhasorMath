@@ -16,7 +16,7 @@ Welcome to Phasor, a Python package designed to empower engineers and researcher
 
 Installing Phasor is a breeze with Python's package manager, pip. Simply execute the following command in your terminal:
 ```
-pip install phasor 
+pip install Phasor 
 ```
 
 ## Documentation
